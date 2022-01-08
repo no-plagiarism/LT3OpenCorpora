@@ -6,24 +6,23 @@ from lt2opencorpora import __version__
 setup(
     name='LT2OpenCorpora',
     version=__version__,
-    author='Dmitry Chaplinsky',
-    author_email='chaplinsky.dmitry@gmail.com',
-    packages=['lt2opencorpora'],
-    url='https://github.com/dchaplinsky/LT2OpenCorpora',
+    author='Danylo Halaiko',
+    author_email='d9nich@pm.me',
+    packages=['lt3opencorpora'],
+    url='https://github.com/no-plagiarism/LT3OpenCorpora',
     description='Python script to convert Ukrainian morphological dictionary '
-                'from LanguageTool project to OpenCorpora forma',
+                'from LanguageTool project to OpenCorpora forma'
+                'more than million lexemes',
     scripts=['bin/lt_convert.py', 'bin/lt_plot.py'],
-    package_data={"lt2opencorpora": ["mapping.csv",
+    package_data={"lt3opencorpora": ["mapping.csv",
                                      "open_corpora_tagset.xml"]},
     license='MIT license',
     install_requires=[
-        'blinker >= 1.3',
-        'unicodecsv >= 0.9.4',
-        'bz2file >= 0.98',
-        'requests',
+        'blinker ~= 1.4',
+        'requests==2.27.1',
     ],
     extras_require={
-        'plot': ["pydot >= 1.0.2"],
+        'plot': ["pydot ~= 1.4.2"],
     },
     zip_safe=False,
     classifiers=[

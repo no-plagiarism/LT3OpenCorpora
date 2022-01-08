@@ -1,4 +1,4 @@
-LT2OpenCorpora
+LT3OpenCorpora
 ==============
 
 Python script to convert the Ukrainian morphological dictionary from the LanguageTool project to the OpenCorpora format.
@@ -11,7 +11,12 @@ It solves these tasks:
 * Converts LanguageTool tags to OpenCorpora tags
 * Groups together wordforms and tries to determine a lemma for the group
 * Exports the tagset, the tagset restrictions and all lemmas to the OpenCorpora format
-
+## Difference With LT2OpenCorpora
+- fix problem with filter on py3 to generate opencorpora file with lemmas
+- add solution for big dictionaries that can not fully be put in RAM (using template.xml)
+- add typing
+- remove Py2 legacy, because of deprecation
+- remove redundant dependencies
 ## It's all about grouping
 Grouping wordforms under a particular lemma is cumbersome for various reasons. Mostly because of homonymy and the internal format of the LanguageTool dict.
 In a nutshell:
@@ -39,3 +44,5 @@ In a nutshell:
 
 ## Running
 ```python bin/lt_convert.py 1000.txt out.xml --debug```
+## LICENSE
+This repo is fork of [Dmitriy Chaplinsky](https://github.com/dchaplinsky/LT2OpenCorpora) and not violate his MIT license.
