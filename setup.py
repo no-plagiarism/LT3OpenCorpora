@@ -4,7 +4,7 @@ from setuptools import setup
 from lt3opencorpora import __version__
 
 setup(
-    name='LT2OpenCorpora',
+    name='LT3OpenCorpora',
     version=__version__,
     author='Danylo Halaiko',
     author_email='d9nich@pm.me',
