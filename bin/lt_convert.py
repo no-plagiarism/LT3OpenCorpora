@@ -7,7 +7,7 @@ import os.path
 import requests
 from tempfile import NamedTemporaryFile
 from collections import Counter
-from lt2opencorpora.convert import Dictionary, doubleform_signal
+from lt3opencorpora.convert import Dictionary, doubleform_signal
 
 sys.path.insert(0, ".")
 

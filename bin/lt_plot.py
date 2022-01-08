@@ -4,14 +4,14 @@ import sys
 import pydot
 from csv import DictReader
 import xml.etree.ElementTree as ET
-import lt2opencorpora
+import lt3opencorpora
 
 sys.path.insert(0, ".")
 
 if __name__ == '__main__':
     # TODO: argparse
 
-    BASEPATH = os.path.dirname(lt2opencorpora.__file__)
+    BASEPATH = os.path.dirname(lt3opencorpora.__file__)
     graph = pydot.Dot(graph_type='digraph')
     nodes_by_opencorpora = {}
     nodes_by_LT = {}

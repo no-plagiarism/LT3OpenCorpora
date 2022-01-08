@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from setuptools import setup
 
-from lt2opencorpora import __version__
+from lt3opencorpora import __version__
 
 setup(
     name='LT2OpenCorpora',
